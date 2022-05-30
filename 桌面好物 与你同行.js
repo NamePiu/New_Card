@@ -6,7 +6,7 @@ cron:30 2,16 13-26/2 5 *
 30 2,16 13-26/2 5 * jd_opencard0514_1.js, tag=joy通用活动, enabled=true
 
 */
-const $ = new Env('5.12-5.20 玩聚六一(开卡)');
+const $ = new Env('桌面好物 与你同行(开卡)');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const Faker=require('./sign_graphics_validate.js')
 const notify = $.isNode() ? require('./sendNotify') : '';
@@ -66,7 +66,7 @@ async function run() {
       return
     }
     let config = [
-	{configCode:'a2f1fa9c24e24a9e901b7c5d5032f50d',configName:'六一儿童节联合活动'},
+	{configCode:'a2f1fa9c24e24a9e901b7c5d5032f50d',configName:'桌面好物 与你同行'},
     ]
     for(let i in config){
       $.hotFlag = false
